@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h>javascript evaluate</h>
+    <p>to evaluate javascript expression</p>
+    <button onclick="myfunction()">click here</button>
+    <p id="result"></p>
+    <script>
+     function myfunction(){
+        var x=10;
+        var y=20;
+        var a=eval("x+y")+ "<br>";
+        var b=eval("2+2")+ "<br>";
+        var c=eval("y-x")+ "<br>";
+        var d=a+b+c + "<br>";
+        // d will concatenates the String
+        document.getElementById("result").innerHTML=d;
+     }
+    </script>
+</body>
+
+</html>

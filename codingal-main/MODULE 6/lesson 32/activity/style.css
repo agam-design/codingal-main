@@ -1,0 +1,10 @@
+/* global properties */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #512b01f1;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(66, 40, 4);
+}

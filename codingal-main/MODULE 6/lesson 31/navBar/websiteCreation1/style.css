@@ -1,0 +1,25 @@
+/* Global Properties */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #4a4951;
+    font-family: "Baloo Tamma 2", cursive;
+}
+
+/* Main Heading Font */
+.m-heading {
+    font-family: "Roboto Slab", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Navigation */
+.navigation-link {
+    border: 2px solid transparent;
+}
+
+.navigation-link:hover {
+    text-decoration: dotted;
+    border-bottom: 2px solid #040432;
+    transition: 0.5s ease;
+}

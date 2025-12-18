@@ -1,0 +1,26 @@
+<!DOCTYPE html><html>
+    <body>
+        <h1>javascript class</h1>
+        <p id="student1"></p>
+        <p id="student2"></p>
+        <script>
+            class student{
+               constructor(name,year){
+                this.name=name;
+                this.year=year;
+               }
+               age(){
+                let date=new Date();
+                return date.getFullYear() - this.year
+               }
+            }
+
+            // use the student class for any number of object
+            student1=new student("riya",2008);
+            document.getElementById("student1").innerHTML="first student is " + student1.name + ". her age is " + student1.age();
+
+            student2=new student("sonali",2002);
+            document.getElementById("student2").innerHTML="second student is " + student2.name + ". her age is " + student2.age();
+        </script>
+    </body>
+</html>

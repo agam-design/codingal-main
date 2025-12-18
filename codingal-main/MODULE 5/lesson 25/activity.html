@@ -1,0 +1,25 @@
+<!DOCTYPE html><html>
+<head>
+    <title>
+        activity
+    </title>
+</head>
+<body>
+    <h1>printing random numbers</h1>
+    <button onclick="myfunction()">click here</button>
+    <p id="number"></p>
+    <script>
+        function myfunction() {
+        var text= "";
+        var i=0;
+        while(i<58) {
+            let a=0;
+            text+= "<br> The Number is " + i;
+            i=i+6;
+        }
+        document.getElementById("number").innerHTML= text;
+    }
+    </script>
+</body>
+
+</html>

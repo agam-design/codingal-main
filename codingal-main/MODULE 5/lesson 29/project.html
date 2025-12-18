@@ -1,0 +1,16 @@
+<!DOCTYPE html><html>
+    <body>
+        <h>project.</h>
+        <p id="Result"></p>
+        <script>
+            async function add(a, b) {
+                let response = await a + b
+                display(response)
+            }
+            function display(c) {
+                document.getElementById("Result").innerHTML = c;
+            }
+            add(65, 80);                           
+        </script>
+    </body>
+</html>

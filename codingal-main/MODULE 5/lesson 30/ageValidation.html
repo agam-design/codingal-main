@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <form name="myform" onsubmit="return validateForm()">
+
+        Name:
+        <input type="text" name="fName">
+        Age:
+        <input type="number" name="age" id="id1" min="18" required>
+        <input type="submit" value="Submit">
+        <button type="button" onclick="myfunction()">Check Age</button>
+
+        <p id="Result"></p>
+    </form>
+
+    <script>
+        function validateForm() {
+        
+            var x = document.forms["myform"]["fName"].value;
+            if (x == "") {
+                alert("Name must be filled");
+                return false;
+            }
+
+           
+            var age = document.forms["myform"]["age"].value;
+            if (age === "") {
+                alert("Age must be filled");
+                return false;
+            }
+
+            if (parseInt(age) < 18) {
+                alert("You must be 18 or older to continue.");
+                return false;
+            }
+
+            return true; 
+        }
+
+        
+        function myfunction() {
+            var inpObj = document.getElementById("id1");
+            if (!inpObj.checkValidity()) {
+                document.getElementById("Result").innerHTML =
+                    inpObj.validationMessage;
+            } else {
+                document.getElementById("Result").innerHTML = "Age is valid.";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>project</title>
+</head>
+
+<body>
+    <p id="result"></p>
+    <button onclick="ascending()">Ascending Order</button>
+    <button onclick="descending()">Descending Order</button>
+
+</body>
+
+<script>
+    var numbers = [67, 30, 49, 36, 9875, 4554];
+
+    function myfunction(i) {
+        return i * 10;
+    }
+
+    var newArray = numbers.map(myfunction);
+
+    document.getElementById("result").innerHTML = newArray;
+
+    function ascending() {
+        numbers.sort(function (a, b) { return a - b });
+        document.getElementById("result").innerHTML = numbers;
+    }
+
+    function descending() {
+        numbers.sort(function (a, b) { return b - a });
+        document.getElementById("result").innerHTML = numbers;
+    }
+</script>
+
+</html>

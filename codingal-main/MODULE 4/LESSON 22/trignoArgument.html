@@ -1,0 +1,41 @@
+<!DOCTYPE html><html>
+<head>
+    <title>
+        trignometry argumentd
+    </title>
+</head>
+<body>
+    <script>
+        var value= Math.cos(90);
+        document.write("The value is " + value + "<br>");
+        var value= Math.sin(30);
+        document.write("The value is " + value + "<br>");
+        var value= Math.sin(60);
+        document.write("The value is " + value + "<br>");
+        var value= Math.cos(45);
+        document.write("The value is " + value + "<br>");
+    </script>
+    <p id="demo"></p>
+    <script>
+        function sum() {
+            let total=0;
+            for(i=0;i<arguments.length;i++){
+                total += arguments[i];
+            }
+            return total;
+        }
+        document.write("Sum = " + sum(1 , 2, 3, 4 ));
+
+    </script>
+    <script>
+        function sum() {
+            let total=0;
+            for(i=0;i<arguments.length;i++){
+                total += arguments[i];
+            }
+            return total;
+        }
+        document.write("Sum = " + sum( 35,6,8,9));
+    </script>
+</body>
+</html>

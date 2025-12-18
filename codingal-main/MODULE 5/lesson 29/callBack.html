@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h>javascript callback</h>
+    <p id="Result"></p>
+    <script>
+    function mydisplayer(a){
+        document.getElementById("Result").innerHTML=a;
+    }
+    function mycalculator(num1,num2,mycallback){
+     let sum=num1+num2;
+     mycallback(sum)
+    }
+    mycalculator(22,11,mydisplayer);
+    </script>
+</body>
+
+</html>

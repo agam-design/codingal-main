@@ -1,0 +1,47 @@
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://img.freepik.com/free-photo/abstract-flowing-neon-wave-background_53876-101942.jpg?semt=ais_hybrid&w=740&q=80");
+    transition: 0.8s all;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5%;
+    color: #fff;
+}
+
+.clear-button {
+    color: #fff;
+    background-color: rgb(133, 130, 130);
+    width: 91.5%;
+}
+
+input {
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    cursor: pointer;
+    width: 70px;
+    background-color: rgb(87, 55, 89);
+    border: 2px solid rgb(25, 7, 7);
+    outline: none;
+    border-radius: 33px;
+}
+
+.result {
+    width: 53.1%;
+}
+
+.row {
+    margin-bottom: 3px;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(160, 160, 160);
+    color: #fff;
+}

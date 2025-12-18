@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error Finding</title>
+</head>
+
+<body>
+    <h1>Array Mapping</h1>
+    <p id="result"></p>
+    <p id="errorMsg"></p>
+
+    <script>
+        var number = [45, 49, 29, 50];
+
+        function myFunction() {
+            return num * 5;
+        }
+
+        try {
+            var newArray = number.map(myFunction);
+            document.getElementById("result").innerHTML = newArray;
+        } catch (err) {
+            document.getElementById("errorMsg").innerHTML = err.message;
+        }
+    </script>
+</body>
+
+</html>

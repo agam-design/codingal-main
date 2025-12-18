@@ -1,0 +1,47 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #252525;
+    font-family: "Baloo Tamma 2", cursive;
+}
+
+/* Main Heading Font */
+.m-heading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-white {
+    color: blue;
+}
+
+/* Main Container height*/
+.main-container {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+    background-image: url("dog.jpg");
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+/* Aligning items in main row */
+.main_row {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* Changing Name Font sixe */
+.main_row h1 {
+    font-size: 10rem;
+}
+
+/* Making the main image the size of the screen */
+.main_row img {
+    width: auto;
+    height: 100vh;
+}

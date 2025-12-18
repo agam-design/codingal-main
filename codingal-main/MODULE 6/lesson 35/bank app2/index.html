@@ -1,0 +1,29 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>Bank App2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bank Tracker App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+        <h1>Bank Tracker</h1>
+        <div class="balance">
+            <h2>Balance: ₹<span id="balance">0</span></h2>
+        </div>
+        <div id="transaction-form">
+            <input type="text" id="description" placeholder="description">
+            <input type="number" id="amount" placeholder="amount">
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="Expense">Expense</option>
+            </select>h
+            <button id="addBtn">Add Transaction</button>
+        </div> 
+        <h3>Transaction</h3>  
+        <ul id="transactions"></ul>   
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h>javascript error handlingg.</h>
+    <p id="errorMsg"></p>
+    <script>
+        // function addAlert() {
+        //     return "hello";
+        // }
+        try {
+            addAlert();
+        }
+        catch(err){
+            document.getElementById("errorMsg").innerHTML=err.message;
+        }
+    </script>
+</body>
+
+</html>

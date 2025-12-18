@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ScrollSpy activity</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        position: relative;
+      }
+
+        /* ScrollSpy target sections */
+      #Home,
+      #About,
+      #Services,
+      #Contact {
+       padding-top: 50px;
+       height: 400px;
+      }
+
+      #Home {
+        background-color: rgb(25, 36, 79);
+      }
+
+      #About {
+        background-color: rgb(180, 184, 253);
+      }
+
+      #Services {
+        background-color: rgb(124, 140, 220);
+      }
+
+      #Contact {
+        background-color: rgb(39, 39, 87);
+      }
+
+  /* Sidebar styles */
+      #myscrollspy {
+         position: fixed;
+            top: 70px;
+            left: 20px;
+            width: 200px;
+      }
+
+      .nav-stacked li a {
+          color: rgb(100, 131, 204);
+            font-weight: bold;
+            border-radius: 0;
+      }
+
+       /* Highlight the active menu item */
+      .nav-stacked li.active>a {
+         background-color: #4c77c3 !important;
+            color: rgb(193, 186, 240) !important;
+      }
+
+      .nav-stacked li>a:hover {
+         background-color: #70b7e4 !important;
+            color: rgba(41, 69, 138, 0.796) !important;
+      }
+
+      /* Add some margin so text doesn't hide under fixed nav */
+    .col-sm-9 {
+            margin-left: 250px;
+    }
+      </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="70">
+    <div class="container-fluid">
+        <div class="coloumn">
+            <!-- left sidebar menu -->
+            <nav id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                </nav>
+                <!-- right sid content -->
+                 <div class="col-sm-9">
+                    <div id="#Home">
+                        <h1>Concept Builders Classes</h1>
+                        <p> <i>Welcome to Concept Builders Classes-Shaping Bright Futures.</i></p>
+                    </div>
+                    <div id="#About">
+                    <h2>About</h2>
+                    <p> <mark style="color: #4c77c3; font-style: italic;">Concept Builders Classes</mark> is a modern coaching center designed to blend traditional teaching with smart learning techniques. We contionously track performance, give feedback, and help students stay exam-ready all year along. Our vision is to create independent learners who love studying and can solve real-life problems.</p>
+                    </div>
+                    <div id="#Services">
+                        <h3>Services</h3>
+                        <p>We offer complete tution support for classes 9-12 covering science,maths,english aligned with ICSE,CBSE syllabus. We guide students step by step motivate them to think critically and help them discover their own strengths. Our classes focus  on concept clarity, creative learning and continous improvement so every child can shine with confidence.</p>
+                    </div>
+                    <div id="#Contact">
+                        <h4>Contact</h4>
+                        <p>Join our classes-Get in Touch Today. Enquire Now</p>
+                    </div>
+                 </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h>javascript array sort</h>
+    <button onclick="ascending()">ascending order</button>
+    <button onclick="descending()">descending order</button>
+    <p id="result"></p>
+    <script>
+        var fruits= ["apple","orange","banana"];
+        document.getElementById("result").innerHTML = fruits;
+        function ascending() {
+            fruits.sort();
+            document.getElementById("result").innerHTML = fruits;
+        }
+        function descending() {
+            fruits.reverse();
+            document.getElementById("result").innerHTML = fruits;
+        }
+    </script>
+</body>
+
+</html>

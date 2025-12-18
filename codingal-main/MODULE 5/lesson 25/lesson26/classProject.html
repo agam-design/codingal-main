@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Class Project</h1>
+    <p id="details"></p>
+
+    <script>
+        class Fruits {
+            constructor(name) {
+                this.fruitName = name;
+            }
+            present() {
+                return "I love " + this.fruitName;
+            }
+        }
+
+        class Fruit extends Fruits {
+            constructor(name, color) {
+                super(name);
+                this.color = color;
+            }
+            show() {
+                return this.present() + ". Its color is " + this.color;
+            }
+        }
+
+        
+        let myFruit = new Fruit("apple", "red");
+        document.getElementById("details").innerHTML = myFruit.show();
+    </script>
+
+</body>
+
+</html>

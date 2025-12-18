@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Functions Activity</title>
+</head>
+
+<body>
+    <button onclick="myfunction()">Execute Function</button>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        function myfunction() {
+            var a = 65;
+            var b = 22;
+            var c = 2;
+
+            document.getElementById("demo").innerHTML = a * b * c;
+            document.getElementById("demo1").innerHTML = "a = " + a;
+            document.getElementById("demo2").innerHTML = "b = " + b;
+            document.getElementById("demo3").innerHTML = "c = " + c;
+        }
+    </script>
+
+    <script>
+         var result = function (a, b) {
+                return a * b;
+            }
+            document.write(result(16, 43))
+    </script>
+</body>
+
+</html>

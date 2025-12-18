@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vertical ScrollSpy Highlight Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+
+        /* ScrollSpy target sections */
+        #section1,
+        #section2,
+        #section3,
+        #section4 {
+            padding-top: 50px;
+            height: 400px;
+        }
+
+        #section1 {
+            background-color: #f39c12;
+        }
+
+        #section2 {
+            background-color: #2ecc71;
+        }
+
+        #section3 {
+            background-color: #3498db;
+        }
+
+        #section4 {
+            background-color: #9b59b6;
+        }
+
+        /* Sidebar styles */
+        #myScrollspy {
+            position: fixed;
+            top: 70px;
+            left: 20px;
+            width: 200px;
+        }
+
+        .nav-stacked li a {
+            color: black;
+            font-weight: bold;
+            border-radius: 0;
+        }
+
+        /* Highlight the active menu item */
+        .nav-stacked li.active>a {
+            background-color: #333 !important;
+            color: white !important;
+        }
+
+        .nav-stacked li>a:hover {
+            background-color: #9a9dad !important;
+            color: white !important;
+        }
+
+        /* Add some margin so text doesn't hide under fixed nav */
+        .col-sm-9 {
+            margin-left: 250px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="70">
+    <div class="container-fluid">
+        <div class="column">
+            <!-- left sidebar menu -->
+            <nav id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#section1">Section 1</a></li>
+                    <li><a href="#section1">Section 2</a></li>
+                    <li><a href="#section3">Section 3</a></li>
+                    <li><a href="#section4">Section 4</a></li>
+                </ul>
+            </nav>
+            <!-- Right side content -->
+            <div class="col-sm-9">
+                <div id="section1">
+                    <h1>Section 1</h1>
+                    <p>Scroll down and watch the menu item on the left automatically highlight as you move between
+                        sections.</p>
+                </div>
+                <div id="section2">
+                    <h1>Section 2</h1>
+                    <p>This is section 2. ScrollSpy automatically adds the <code>.active</code> class to the matching
+                        menu item.</p>
+                </div>
+                <div id="section3">
+                    <h1>Section 3</h1>
+                    <p>This is section 3. The corresponding menu item is now highlighted.</p>
+                </div>
+                <div id="section4">
+                    <h1>Section 4</h1>
+                    <p>This is section 4. You’ve reached the bottom of the ScrollSpy example.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h>javascript promises</h>
+    <p id="Result"></p>
+    <script>
+        function mydisplayer(c) {
+            document.getElementById("Result").innerHTML = c;
+        }
+        function sum(a, b) {
+            let response = a + b;
+            mydisplayer(response);
+        }
+        let mypromise = new Promise(function (myresolve, myreject) {
+            // let x = 0;
+            let x=5;
+            if (x == 0) {
+                myresolve("ok");
+            }
+            else {
+                myreject("error");
+            }
+        })
+
+        mypromise.then(
+            function (value) { sum(43, 11) },
+            function(error) { sum(error) }
+           )
+    </script>
+</body>
+
+</html>
