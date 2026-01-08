@@ -1,0 +1,17 @@
+fruits =["mango", "strawberry", "banana", "cherry", "apple"]
+print("length of list is ", len(fruits))
+print("first element is ", fruits[0])
+fruits.append("papaya")
+print("updated list is", fruits)
+fruits.remove("cherry")
+print("updated list is ", fruits)
+fruits.sort()
+print("sorted list ", fruits)
+fruits.reverse()
+print("reversed list ", fruits)
+fruits.pop(1)
+print("updated list is ", fruits)
+fruits=fruits[0:4]
+print("sliced list ", fruits)
+fruits.clear()
+print("cleared list ", fruits)
