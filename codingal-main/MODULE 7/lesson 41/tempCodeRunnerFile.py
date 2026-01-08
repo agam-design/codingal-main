@@ -1,0 +1,2 @@
+
+board = turtle.Turtle()
