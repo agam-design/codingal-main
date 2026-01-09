@@ -10,3 +10,4 @@ myDict.pop("age")
 print(myDict)
 myDict.clear()
 print(myDict)
+
