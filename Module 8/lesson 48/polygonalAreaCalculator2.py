@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-# Abstract Base Class
 class Polygon(ABC):
     def area(self):
         pass
@@ -8,28 +7,28 @@ class Polygon(ABC):
 
 class Rectangle(Polygon):
     def __init__(self, length, width):
-        self.length = length
-        self.width = width
+        self._length = length    
+        self._width = width
 
     def area(self):
-        return self.length * self.width
+        return self._length * self._width
 
 
 class Square(Polygon):
     def __init__(self, side):
-        self.side = side
+        self._side = side        
 
     def area(self):
-        return self.side * self.side
+        return self._side * self._side
 
 
 class Triangle(Polygon):
     def __init__(self, base, height):
-        self.base = base
-        self.height = height
+        self._base = base        
+        self._height = height
 
     def area(self):
-        return 0.5 * self.base * self.height
+        return 0.5 * self._base * self._height
 
 
 if __name__ == "__main__":
@@ -40,4 +39,4 @@ if __name__ == "__main__":
     ]
 
     for shape in shapes:
-        print(f"Area: {shape.area()}")
+        print("Area:", shape.area())
