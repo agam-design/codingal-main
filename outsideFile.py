@@ -1,1 +1,3 @@
-hi! I'm Agam
+I'm NEET aspirant.I don't like PHYSICS.
+The NEET exam will take place in 2027.
+I love BIOLOGY.
