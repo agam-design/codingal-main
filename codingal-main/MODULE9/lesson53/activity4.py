@@ -17,7 +17,7 @@ def play(yourChoice):
         result = "You Win!!"
     
     else:
-        result = "Compuer Wins!!"
+        result = "Computer Wins!!"
 
     yourlabel.config(text="You Chose: " + yourChoice)
     complabel.config(text="Computer chose: " + compChoice)
