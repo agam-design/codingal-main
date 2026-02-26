@@ -1,13 +1,5 @@
 import tkinter as tk
 import random
-from tkinter import*
-from PIL import Image, ImageTk
-
-root=Tk()
-root.title("ROCK PAPER SCISSOR GAME")
-root.geometry("400x400")
-upload=Image.open(qwqwqwqwqqwwqqwqwqsqsqwwqqqgvcgjsvcdfshbbcxtsc)
-
 choices=["ROCK","PAPER","SCISSORS"]
 
 def play(yourChoice):
