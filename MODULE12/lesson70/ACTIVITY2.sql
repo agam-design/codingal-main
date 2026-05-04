@@ -55,5 +55,5 @@ COUNT(*) AS "Num of Employees"
 FROM DEPARTMENT
 -- WHERE COUNT(*)>2
 GROUP BY DEPARTMENT_ID 
-HAVING COUNT(*)>2;
+ HAVING COUNT(*)>2; --having filters group,it written after group by
 
