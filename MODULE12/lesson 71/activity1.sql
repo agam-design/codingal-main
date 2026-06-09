@@ -70,8 +70,8 @@ JOIN Salesman ON Customer.city= Salesman.city;
 SELECT Customer.cust_name, Salesman.name
 FROM Customer
 JOIN Salesman ON Customer.Salesman_id = Salesman.Salesman_id;
-
 -- Fetching orders where customer's city does not match salesman's city
+
 SELECT Orders.ord_no, Customer.cust_name, Orders.customer_id, Orders.Salesman_id
 FROM Orders
 JOIN Customer ON Orders.customer_id = Customer.customer_id
